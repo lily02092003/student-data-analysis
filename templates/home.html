@@ -1,4 +1,7 @@
 <html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
 <body>
     <div class="login">
        <form action="{{ url_for('predict_datapoint')}}" method="post">
@@ -103,7 +106,9 @@
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}
+       The maths score is {{results}}
     </h2>
-   <body>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
 </html>
